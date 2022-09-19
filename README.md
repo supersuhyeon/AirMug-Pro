@@ -1,6 +1,6 @@
 ## Apple clone - AirMug Pro
 
-![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/94214512/190957369-a4883189-68d5-4d84-b5d5-65d9f208850b.gif)<br>
+![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/94214512/190973429-9ba5ed75-030c-4805-b45c-4d5a1b9c5603.gif)<br>
 [Apple-Clone-AirMug-Pro-website](https://snazzy-malabi-fbabfd.netlify.app/)
 
 ### Goals of the project
