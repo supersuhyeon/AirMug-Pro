@@ -129,5 +129,5 @@ function loop() {
 ### Self-reflection
 
 I always had a dream to make an interactive website like Apple's.
-I have no idea how many times I referenced Apple's developer tools, MDN, and videosto understand. I had to handwrite some of the concepts and functions more than 5-6 times to understand.<br>
+I have no idea how many times I referenced Apple's developer tools, MDN, and videos to understand. I had to handwrite some of the concepts and functions more than 5-6 times to understand.<br>
 It was much more difficult and complex than I had expected, which led me to draw with pen and paper to better understand the project. As a result of completing this project, I now try to be more accurate when calculating elements and device compatibility. This clone project has made me more interested in web development and I'm glad that I persevered to finish this project despite moments where I struggled. <br> I always want to be a better coder than yesterday!!
