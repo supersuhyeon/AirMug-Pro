@@ -1,6 +1,7 @@
 ## Apple clone - AirMug Pro
 
 ![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/94214512/190957369-a4883189-68d5-4d84-b5d5-65d9f208850b.gif)
+[Apple-Clone-AirMug-Pro-website](https://snazzy-malabi-fbabfd.netlify.app/)
 
 ### Goals of the project
 
@@ -56,7 +57,7 @@ HTML, CSS, Javascript
     ```
 
 2.  Image-blending animation on currentScene3
-    ![blendingimage1](https://user-images.githubusercontent.com/94214512/189022623-aab69e22-c5a8-4e76-932f-ae2fa1e07dc8.png)
+    ![blendingimage2](https://user-images.githubusercontent.com/94214512/190970356-87db2be3-fa41-4fda-af18-320d9b8dc6cc.png)
 
 ```js
 //to fully fill up both width and height on all different devices
@@ -128,5 +129,5 @@ function loop() {
 ### Self-reflection
 
 I always had a dream to make an interactive website like Apple's.
-I have no idea how many times I referenced Apple's developer tools, MDN, and videosto understand. I had to handwrite some of the concepts and functions more than 5-6 times to understand.
-It was much more difficult and complex than I had expected, which led me to draw with pen and paper to better understand the project. As a result of completing this project, I now try to be more accurate when calculating elements and device compatibility. This clone project has made me more interested in web development and I'm glad that I persevered to finish this project despite moments where I struggled. I always want to be a better coder than yesterday!!
+I have no idea how many times I referenced Apple's developer tools, MDN, and videosto understand. I had to handwrite some of the concepts and functions more than 5-6 times to understand.<br>
+It was much more difficult and complex than I had expected, which led me to draw with pen and paper to better understand the project. As a result of completing this project, I now try to be more accurate when calculating elements and device compatibility. This clone project has made me more interested in web development and I'm glad that I persevered to finish this project despite moments where I struggled. <br> I always want to be a better coder than yesterday!!

@@ -177,15 +177,15 @@
 
         if(values.length === 3){
             // 스크롤섹션 총 시작과 끝값이 아닌 위에 명시한 start~~~end 값 그 사이의 애니메이션 실행 분기처리.
-            const partScrollStart = values[2].start * scrollHeight //0.1 * 4170 = 417
-            const partScrollEnd = values[2].end * scrollHeight //0.17 * 4170 = 748
-            const partScrollHeight = partScrollEnd - partScrollStart // = 331
+            const partScrollStart = values[2].start * scrollHeight 
+            const partScrollEnd = values[2].end * scrollHeight 
+            const partScrollHeight = partScrollEnd - partScrollStart 
             
             if(currentYoffset >= partScrollStart && currentYoffset <= partScrollEnd){ 
                 //partscrollheight에 value 1,0을 곱해주는 이유는 애니메이션이 실행될 구간을 애니메이션을 실행할 최초값과 마지막값으로 세팅해주기위함.
                //사용자의 스크롤이 partscrollheight 구간에 들어오게되면 0.0001~0.999까지 범위가 생기는데 그 곳을 애니메이션 실행값으로 곱해서(변경해서) 
                //최종 rv를 캔버스로 그리거나 css style값에 할당해서 스크롤될때 애니메이션이 그 값으로 실행되도록함. rv는 곧 애니메이션 값이다.
-                rv =  (currentYoffset - partScrollStart) / partScrollHeight * (values[1] - values[0]) + values[0] //1=46,0=257
+                rv =  (currentYoffset - partScrollStart) / partScrollHeight * (values[1] - values[0]) + values[0] 
 
             }else if(currentYoffset < partScrollStart){
                 rv=values[0]
@@ -340,8 +340,6 @@
                
                 const recalculatedInnerWidth = document.body.offsetWidth / canvasScaleRatio; //크롬 스크롤값제외하기위해 body.offsetWidth, objs.canvas.width 1270
                 const recalculatedInnerHeight = window.innerHeight / canvasScaleRatio; //objs.canvas.height 1080
-                console.log(recalculatedInnerWidth)
-                // console.log(recalculatedInnerWidth)
                 //하얀박스 폭
                  //캔버스 본래 크기위에다가 흰창을 그려야 캔버스 scale 0.772했을때 같이 맞게 줄어듬.
                 const whiteRectWidth = recalculatedInnerWidth * 0.15
@@ -366,7 +364,6 @@
                 // objs.context.fillRect(values.rect2X[0], 0, parseInt(whiteRectWidth),objs.canvas.height)
                 objs.context.fillRect(parseInt(calcValues(values.rect1X, currentYoffset)),0,parseInt(whiteRectWidth),objs.canvas.height)
                 objs.context.fillRect(parseInt(calcValues(values.rect2X, currentYoffset)),0,parseInt(whiteRectWidth),objs.canvas.height)
-                console.log(calcValues(values.rect1X, currentYoffset))
 
 
                 if(scrollRatio < values.rect1X[2].end){

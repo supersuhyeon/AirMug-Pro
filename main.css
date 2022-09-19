@@ -144,13 +144,13 @@ strong{
 }
 
 #scroll-section-0 h1{
-font-size: 4rem;
-font-weight: bold;
-text-align: center;
-position: relative; 
-/* relative는 static이었을때의 위치를 기준으로 값을 갖게된다. */
-z-index: 10;
-top: -10vh;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative; 
+    /* relative는 static이었을때의 위치를 기준으로 값을 갖게된다. */
+    z-index: 10;
+    top: -10vh;
 }
 
 .main-message{
@@ -186,13 +186,13 @@ top: -10vh;
 }
 
 .main-message small{
-display: block;
-font-size: 1.2rem;
-margin-bottom: 0.5em;
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
 }
 
 #scroll-section-2 .main-message{
-font-size: 3.5rem;
+    font-size: 3.5rem;
 }
 
 .sticky-elem.desc-message{
@@ -264,9 +264,9 @@ font-size: 3.5rem;
 }
 
 .sticky-elem-canvas canvas{
-position: absolute;
-top: 50%;
-left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .image-blend-canvas.sticky{
@@ -276,13 +276,11 @@ left: 50%;
 #scroll-section-2 .b{
     top: 10%;
     left: 40%;
-
 }
 
 #scroll-section-2 .c{
     top: 15%;
     left: 45%;
-    
 }
 
 .normal-content{
