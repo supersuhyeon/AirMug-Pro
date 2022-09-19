@@ -1,0 +1,342 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+    color: rgb(29,29,31);
+    letter-spacing: -0.05em;
+    background-color: white;
+}
+
+body.before-load{
+    overflow: hidden;
+}
+
+.wrapper{
+    /* iphone에서 가로 스크롤 방지 */
+    overflow-x: hidden;
+}
+
+p{
+    line-height: 1.6;
+}
+
+a{
+    color: rgb(29,29,31);
+    text-decoration: none;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background : #fff;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.before-load .loading {
+    opacity: 1;
+}
+
+.before-load .wrapper{
+    display: none;
+}
+
+.loading-circle{
+    width: 54px;
+    height: 54px;
+    animation: spinning-ani2 3s infinite;
+}
+
+@keyframes spinning-ani2{
+    100%{transform: rotate(360deg);}
+}
+
+
+.loading-circle circle{
+    stroke: pink;
+    stroke-width: 4;
+    fill: transparent;
+    stroke-dasharray: 157;
+    stroke-dashoffset: -157;
+    /* document.querySelector ('.loading-circle circle).getTotalLength() */
+    animation: spinning-ani 2s infinite;
+}
+
+@keyframes spinning-ani {
+    0%{ stroke-dashoffset: 157;}
+    75% {stroke-dashoffset: -147;}
+    100% {stroke-dashoffset: -157;}
+}
+
+
+.global-nav{
+    height: 44px;
+    padding: 0 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.local-nav{
+    height: 52px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 1rem;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+.local-nav-sticky .local-nav{
+    position: fixed;
+    top: 0;
+    background: rgba(255,255,255,0.1);
+    /* for iphone */
+    -webkit-backdrop-filter: saturate(180%) blur(15px) ;
+    -moz-backdrop-filter: saturate(180%) blur(15px) ;
+    -o-backdrop-filter: saturate(180%) blur(15px) ;
+    backdrop-filter: saturate(180%) blur(15px);
+}
+
+.global-nav-links,
+.local-nav-links{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;   
+    height: 100%;
+    align-items: center;
+}
+
+.global-nav-links{
+    justify-content: space-between;
+}
+
+.product-name{
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+
+.local-nav-links a:not(.product-name){
+    margin-left: 2em;
+    font-size: 0.8em;
+}
+
+.scroll-section{
+    padding-top: 50vh;
+    position: relative;
+    /* border: 3px solid red; */
+}
+
+#scroll-section-0 h1{
+font-size: 4rem;
+font-weight: bold;
+text-align: center;
+position: relative; 
+/* relative는 static이었을때의 위치를 기준으로 값을 갖게된다. */
+z-index: 10;
+top: -10vh;
+}
+
+.main-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    font-size: 2.5rem;
+    /* background-color: yellow; */
+    margin: 5px 0;
+    opacity: 0;
+    top:35vh;
+}
+.main-message p {
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description{
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: #888;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.description strong{
+    font-size: 3rem;
+    color: rgba(29,29,31);
+    float: left;
+    margin-right: 0.2em;
+}
+
+.main-message small{
+display: block;
+font-size: 1.2rem;
+margin-bottom: 0.5em;
+}
+
+#scroll-section-2 .main-message{
+font-size: 3.5rem;
+}
+
+.sticky-elem.desc-message{
+    font-weight: bold;
+    width: 50%;
+    opacity: 0;
+}
+
+.pin{
+    width: 1px;
+    height: 100px;
+    background: rgba(29,29,31);
+}
+
+.mid-message{
+    font-size: 2rem;
+    padding: 0 1rem;
+    color: #888;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mid-message strong{
+    color: rgba(29,29,31);
+}
+
+.canvas-caption{
+    color: #888;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    max-width: 1000px;
+    margin: -24rem 0 auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 7rem;
+    color: white;
+    font-weight: bold;
+}
+
+.sticky-elem{
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+#show-scene-0 #scroll-section-0 .sticky-elem,
+#show-scene-1 #scroll-section-1 .sticky-elem,
+#show-scene-2 #scroll-section-2 .sticky-elem,
+#show-scene-3 #scroll-section-3 .sticky-elem,
+#show-scene-4 #scroll-section-4 .sticky-elem{
+    display: block; 
+    will-change: transform, opacity;
+}
+
+.scroll-effect-end .sticky-elem{
+    display: none !important;
+}
+
+.sticky-elem-canvas{
+    top: 0;
+    background: #fff;
+    height: 100%;
+}
+
+.sticky-elem-canvas canvas{
+position: absolute;
+top: 50%;
+left: 50%;
+}
+
+.image-blend-canvas.sticky{
+    position : fixed;
+}
+
+#scroll-section-2 .b{
+    top: 10%;
+    left: 40%;
+
+}
+
+#scroll-section-2 .c{
+    top: 15%;
+    left: 45%;
+    
+}
+
+.normal-content{
+    margin-bottom: 10rem;
+}
+
+#scroll-section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(min-width: 1024px){
+    #scroll-section-0 h1{
+        font-size: 9vw;
+    }
+    .main-message{
+        font-size: 4vw;
+    }
+    .description{
+        padding: 0;
+        font-size: 2rem;
+    }
+    .description strong{
+        font-size: 6rem;
+    }
+    #scroll-section-2 .main-message{
+        font-size: 6vw;
+    }
+    .main-message small{
+        font-size: 1.5vw;
+    }
+    .sticky-elem.desc-message{
+        width: 20%;
+         opacity: 0;
+    }
+    .mid-message{
+        padding: 0;
+        width: 1000px;
+        font-size: 4vw;
+    }
+    .canvas-caption{
+        padding: 0;
+        font-size: 2rem;
+        margin-top: -8rem;
+    }
+
+    #scroll-section-2 .b{
+        top: 20%;
+        left: 53%;
+    }
+    
+    #scroll-section-2 .c{
+        left: 55%;
+    }
+}
