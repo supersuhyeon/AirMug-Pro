@@ -57,7 +57,7 @@ HTML, CSS, Javascript
     ```
 
 2.  Image-blending animation on currentScene3
-    ![blendingimage2](https://user-images.githubusercontent.com/94214512/190970356-87db2be3-fa41-4fda-af18-320d9b8dc6cc.png)
+    ![blendingimage3](https://user-images.githubusercontent.com/94214512/190972547-64aa69be-861a-46f7-9090-11ab46ea72b3.png)
 
 ```js
 //to fully fill up both width and height on all different devices
